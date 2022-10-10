@@ -20,3 +20,5 @@ vTeléfonos.append(tele)
 
 print(vNombres)
 print(vTeléfonos)
+
+#para mañana que aparezca el telefono tal es de juan
