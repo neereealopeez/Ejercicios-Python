@@ -1,9 +1,7 @@
 #Tipos de datos y variables
 
-from distutils.dep_util import newer
 
-
-nombre= "Nerea"
+nombre= ""
 edad= 17
 mayorOmenorEdad= False
 
