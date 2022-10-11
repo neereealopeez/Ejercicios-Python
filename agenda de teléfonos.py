@@ -12,13 +12,10 @@ Ej: (Juan - Teléfono, Pepe - Teléfono)
 vNombres = []
 vTeléfonos= []
 
-nombre= (input("Dime un nombre"))
-tele= (input("Dime un teléfono"))
+nombre= (input("Dime un nombre "))
+tele= (input("Dime un teléfono "))
 
 vNombres.append(nombre)
 vTeléfonos.append(tele)
 
-print(vNombres)
-print(vTeléfonos)
-
-#para mañana que aparezca el telefono tal es de juan
+print("El teléfono de", vNombres,"es", vTeléfonos)
