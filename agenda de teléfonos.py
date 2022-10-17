@@ -8,14 +8,33 @@ Lista para nombres y teléfonos
 Ej: (Juan - Teléfono, Pepe - Teléfono)
 
 '''
-#Opción 1
 vNombres = []
 vTeléfonos= []
 
-nombre= (input("Dime un nombre "))
-tele= (input("Dime un teléfono "))
 
-vNombres.append(nombre)
-vTeléfonos.append(tele)
 
-print("El teléfono de", vNombres,"es", vTeléfonos)
+#Creamos un menú para una agenda
+'''
+1 - Insertar contacto
+2 - Borrar contacto
+3 - Buscar contacto
+4 - Ver todos los contactos
+5- Salir
+'''
+
+opc=0
+while (opc!=5):
+    print("****MENÚ INICIAL****")
+    print("1 - Insertar contacto")
+    print("2 - Borrar contacto")
+    print("3 - Buscar contacto")
+    print("4 - Ver todos los contactos")
+    print("5- Salir")
+    print("********************")
+
+    try:
+        opc= int(input("Selecciona un número "))
+    except:
+        print)"Las opciones son del 1 al 5"
+
+    
