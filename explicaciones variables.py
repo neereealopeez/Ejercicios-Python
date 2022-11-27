@@ -16,3 +16,6 @@ nombre = input("Dime tu nombre: \n")
 edad= input("Dime tu edad \n")
 
 print("Buenos días" , nombre , "tu edad es" , edad)
+
+if/else
+base= (int)(input("¿Cuál es su base? ") #Si queremos guardar números usamos int
