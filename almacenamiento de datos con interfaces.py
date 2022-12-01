@@ -59,4 +59,10 @@ label_contraseña2.grid(row=3, column=1, pady=12)
 boton_guardar.grid(row=4, column=1, pady=12)
 boton_salir.grid(row=4, column=2, pady=12)
 
+combo_sexo = ttk.Combobox(ventana,
+    state="readonly",
+    values=["Mujer", "Hombre", "Prefiero no decirlo" ]
+)
+combo_sexo.place(x=200, y=230)
+combo_sexo.set("Selecciona sexo")
 ventana.mainloop()
