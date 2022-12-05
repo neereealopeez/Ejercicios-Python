@@ -1,18 +1,22 @@
 import flet as ft
 
 def main(page: ft.Page):
+    page.title="ola"
 
-    def cambiarColor(e):
-        t.color="cyan"
-        for i in range (10):
-            text=ft.Text(value=f"Número {i}", size="10")
-            page.add(text)
-
+    def mostrarNombre(e):
+        t.value=textField_Nombre.value
+        page.update()
 
     #componente de texto
     t=ft.Text(value="Introducción a Flet", color="pink", size=20, italic=True)
     page.add(t) #Añade y actualiza
+
     #Componente botón
-    bt=ft.FloatingActionButton(icon=ft.icons.ADD, on_click=cambiarColor)
+    bt=ft.FloatingActionButton(icon=ft.icons.ADD, on_click=mostrarNombre)
     page.add(bt)
+
+    textField_Nombre= ft.TextField(label="Nombre", hint_text="¿Cuál es tu nombre?")
+    textField_Nombre.focus()
+    page.add(textField_Nombre)
+
 ft.app(target=main)
